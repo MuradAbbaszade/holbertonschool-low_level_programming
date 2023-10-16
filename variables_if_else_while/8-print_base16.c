@@ -1,23 +1,23 @@
 #include <stdio.h>
 
 /**
-  * main - Prints the numbers since 0 to 9
+  * main - Prints a hexadecimal string
   *
   * Return: Always (Success)
   */
 int main(void)
 {
-	char n;
+	char c;
 
-	for (n = '0'; n <= '9'; n++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		putchar(n);
+		putchar(c);
 	}
-	for (n = 'a'; n <= 'f'; n++)
+
+	for (c = 'a'; c <= 'f'; c++)
 	{
-		putchar(n);
+		putchar(c);
 	}
-	
 
 	putchar('\n');
 
