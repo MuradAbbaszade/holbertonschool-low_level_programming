@@ -4,6 +4,7 @@
 
 /**
  * main - Prints a text according number
+ * Return - Always returns 1
  */
 int main(void)
 {
