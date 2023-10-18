@@ -22,11 +22,11 @@ if (j == 9)
 {
 if (n < 10)
 {
-printf(" %d ", n);
+printf(" %d", n);
 }
 else
 {
-printf("%d ", n);
+printf("%d", n);
 }
 }
 else
