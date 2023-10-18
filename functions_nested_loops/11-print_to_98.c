@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * print_to_98 - check the code
  * @n:input
@@ -14,7 +15,8 @@ for (i = n ; i <= 98 ; i++)
 {
 if (i == 98)
 {
-putchar('0' + i);
+putchar('0' + 9);
+putchar('0' + 8);
 }
 else
 {
@@ -28,7 +30,8 @@ for (i = n ; i >= 98 ; i--)
 {
 if (i == 98)
 {
-putchar('0' + i);
+putchar('0' + 9);
+putchar('0' + 8);
 }
 else
 {
