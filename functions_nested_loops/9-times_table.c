@@ -17,7 +17,7 @@ if (j == 0)
 printf("%d, ", n);
 }
 else
-{    
+{
 if (j == 9)
 {
 if (n < 10)
