@@ -14,7 +14,7 @@ for (i = n ; i <= 98 ; i++)
 {
 if (i == 98)
 {
-_putchar('0' + i);
+putchar('0' + i);
 }
 else
 {
@@ -28,7 +28,7 @@ for (i = n ; i >= 98 ; i--)
 {
 if (i == 98)
 {
-_putchar('0' + i);
+putchar('0' + i);
 }
 else
 {
