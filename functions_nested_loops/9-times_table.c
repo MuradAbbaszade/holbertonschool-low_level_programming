@@ -14,11 +14,11 @@ for (j = 0 ; j <= 9 ; j++)
 {
 if (n < 10)
 {
-printf(" %d ", n);
+printf(" %d ,", n);
 }
 else
 {
-printf("%d ", n);
+printf("%d ,", n);
 }
 n = n + d;
 }
