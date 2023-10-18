@@ -12,13 +12,27 @@ for (i = 0 ; i <= 9 ; i++)
 {
 for (j = 0 ; j <= 9 ; j++)
 {
+if (j == 9)
+{
 if (n < 10)
 {
-printf(" %d ,", n);
+printf(" %d ", n);
 }
 else
 {
-printf("%d ,", n);
+printf("%d ", n);
+}
+}
+else
+{
+if (n < 10)
+{
+printf(" %d, ", n);
+}
+else
+{
+printf("%d, ", n);
+}
 }
 n = n + d;
 }
