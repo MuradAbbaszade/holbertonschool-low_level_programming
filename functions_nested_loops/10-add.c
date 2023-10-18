@@ -1,0 +1,13 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * add - check the code
+ * @a:a
+ * @b:b
+ * Return: Always a+b.
+ */
+int add(int a, int b)
+{
+return (a + b);
+}
