@@ -1,4 +1,8 @@
 #include <stdio.h>
+/**
+ * main : function
+ * Return: 0 
+*/
 int main(void)
 {
 int i, j, k, a = 1, b = 2, y = 2;
