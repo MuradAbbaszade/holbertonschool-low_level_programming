@@ -1,15 +1,16 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
  * print_numbers - function
  * void
  * Return: nothing.
  */
-int print_numbers(void)
+void print_numbers(void)
 {
-for (int i = 0 ; i < 10 ; i++)
+int i;
+for (i = 0 ; i < 10 ; i++)
 {
-putchar(i);
+_putchar(i + '0');
 }
-putchar("/n");
+_putchar('\n');
 }
