@@ -24,10 +24,16 @@ _putchar(' ');
 }
 _putchar('\\');
 }
+if(j != k-1)
+{
 _putchar('\n');
+}
 k++;
 }
 }
+else
+{
 _putchar('\n');
+}
 }
 
