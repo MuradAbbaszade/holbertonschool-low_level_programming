@@ -8,24 +8,17 @@
  */
 int main(void)
 {
-	long int n = 612852475143;
-	int result, odd;
+  long number = 612852475143;
+  long i;
 
-	while (n % 2 == 0)
+	for(i=2;i<n;i++)
 	{
-		result = 2;
-		n /= 2;
-	}
-	for (odd = 3; odd <= sqrt(n); odd += 2)
-	{
-		while (n % odd == 0)
+		if (n % i == 0)
 		{
-			result = odd;
-			n /= odd;
+			n = n / i;
+			continue;
 		}
 	}
-	if (n > 2)
-		result = n;
-	printf("%i\n", result);
+	printf("%ld\n", n);
 	return (0);
 }
