@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagonal - check the code
+ * print_square - check the code
  * @n:input
  * Return: Always 0.
  */
