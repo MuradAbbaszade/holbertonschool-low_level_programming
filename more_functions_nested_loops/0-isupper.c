@@ -2,7 +2,7 @@
 #include "ctype.h"
 /**
  * _isupper - function.
- * @C:input
+ * @c:input
  * Return: 0 1.
  */
 int _isupper(char c)
