@@ -12,7 +12,8 @@ int len = strlen(s);
 int i;
 for (i = 0 ; i < (len * 2) - 1 ; i++)
 {
-if (i < len - 1) s++;
+if (i < len - 1)
+s++;
 else
 _putchar(*s--);
 }
