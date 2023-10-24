@@ -14,7 +14,7 @@ else
 n = (len - 1) / 2;
 for (i = 0 ; i < len ; i++)
 {
-if (i >= n)
+if (i >= len - n)
 _putchar(*str);
 str++;
 }
