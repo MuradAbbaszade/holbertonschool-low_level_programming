@@ -11,8 +11,8 @@ int i, len = strlen(str);
 for (i = 0 ; i < len ; i++)
 {
 if (i % 2 == 0)
-putchar(*str);
-*str++;
+_putchar(*str);
+str++;
 }
-putchar('\n');
+_putchar('\n');
 }
