@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <string.h>
 /**
  * _strcpy - check the code
  * @dest:input
@@ -10,9 +10,10 @@
 char *_strcpy(char *dest, char *src)
 {
 int i;
-for (i = 0; src[i] != '\0'; i++)
+int n = strlen(src);
+for (i = 0; src[i] != '\0' && i < n; i++)
 dest[i] = src[i];
-for ( ; src[i] !='\0'; i++)
+for ( ; i < n; i++)
 dest[i] = '\0';
-return dest;
+return (dest);
 }
