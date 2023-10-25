@@ -1,6 +1,6 @@
-#include "main.h"
 #include <stdio.h>
-
+#include <string.h>
+#include "main.h"
 /**
  * _strcat - check the code
  * @dest:input
@@ -15,5 +15,5 @@ int i;
 for (i = 0 ; i < n && src[i] != '\0' ; i++)
 dest[dest_len + i] = src[i];
 dest[dest_len + i] = '\0';
-return dest;
+return (dest);
 }
