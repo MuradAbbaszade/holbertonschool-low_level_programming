@@ -8,13 +8,21 @@
  */
 void rev_string(char *s)
 {
-int len = strlen(s), i = 0, j = len - 1;
-char s2[len];
-while (s[i])
-{
-    s2[i] = s[j];
-    i++;
-    j--;
-}
-strcpy(s, s2);
+	int c = 0;
+	char *a;
+
+	while (*s != '\0')
+	{
+		*a = *s;
+		s++;
+		a++;
+		c++;
+	}
+	s--;
+	for (; c > 0; c--)
+	{
+
+		*s = *(a - c);
+		s--;
+	}
 }
