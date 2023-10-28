@@ -6,11 +6,22 @@
  */
 void reverse_array(int *a, int n)
 {
-int i,j;
-for (i = n - 1, j = n - 1; i < n / 2; i++, j--)
+int i = n - 1, j=0;
+int k, center;
+if (n % 2 != 0)
 {
-int k = a[i];
-a[i] = a[j];
-a[j] = k;
+center = (n + 1) / 2;
+}
+else
+{
+center = n / 2;
+}
+while (i >= center)
+{
+k = *(a + i);
+*(a + i) = *(a + j);
+*(a + j) = k;
+j++;
+i--;
 }
 }
