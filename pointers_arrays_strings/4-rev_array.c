@@ -6,7 +6,7 @@
  */
 void reverse_array(int *a, int n)
 {
-int i = n - 1, j=0;
+int i = n - 1, j = 0;
 int k, center;
 if (n % 2 != 0)
 {
