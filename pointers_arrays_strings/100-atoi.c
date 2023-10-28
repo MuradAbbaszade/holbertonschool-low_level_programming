@@ -8,7 +8,8 @@
  */
 int _atoi(char *s)
 {
-int found = 0, number = 0, is_negative = 1;
+int found = 0, is_negative = 1;
+unsigned int number = 0;
 while (*s)
 {
 if (*s >= 48 && *s <= 57)
