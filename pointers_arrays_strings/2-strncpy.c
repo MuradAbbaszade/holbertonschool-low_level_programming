@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include "main.h"
 /**
  * strncpy - check the code
  * @dest:input
@@ -14,4 +16,5 @@ dest[i] = src[i];
 for (; i < n; i++) {
 dest[i] = '\0';
 }
+return (dest);
 }
