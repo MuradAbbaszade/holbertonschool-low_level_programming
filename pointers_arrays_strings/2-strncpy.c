@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include "main.h"
 /**
  * strncpy - check the code
  * @dest:input
