@@ -10,8 +10,20 @@
 char *_strcpy(char *dest, char *src)
 {
 int i;
-int len = strlen(src);
-for (i = len ; i >= 0 ; i--)
-*(dest + i) = *(src + i);
+int len = 	int i;
+
+	i = strlen(src);
+
+	while (i >= 0)
+	{
+		*(dest + i) = *(src + i);
+		i--;
+	}
+	return (dest);
+ for (i=strlen(src)i >= 0)
+	{
+		*(dest + i) = *(src + i);
+		i--;
+	}
 return (dest);
 }
