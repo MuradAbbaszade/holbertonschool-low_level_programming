@@ -1,5 +1,5 @@
 /**
- * strncpy - check the code
+ * _strncpy - check the code
  * @dest:input
  * @src:input
  * @n:input
@@ -7,12 +7,15 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-int i;
-for (i = 0; i < n && src[i] != '\0'; i++) {
-dest[i] = src[i];
+char *result = dest;
+while (n > 0 && (*dest++ = *src++))
+n--;
+if (n > 0)
+{
+while (--n > 0)
+{
+*dest++ = '\0';
 }
-for (; i < n; i++) {
-dest[i] = '\0';
 }
-return (dest);
+return (result);
 }
