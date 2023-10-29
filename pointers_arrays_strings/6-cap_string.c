@@ -14,7 +14,7 @@ int i = 0, len = strlen(str);
 while (i < len)
 {
 c = *(str + i);
-if (c >= 97 && c <= 122 && i == 1)
+if (c >= 97 && c <= 122 && i == 0)
 *(str + i) = c - 32;
 else if ((c >= 58 && c <= 63) || (c >= 33 && c <= 44) || c == 46
 || c == ' ' || c == '\t' || c == '\n')
