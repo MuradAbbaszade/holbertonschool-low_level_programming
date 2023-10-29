@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <string.h>
 /**
  * leet - check the code for
  * @str:input
@@ -17,7 +17,7 @@ for (i = 0 ; i < 5 ; i++)
 for (j = 0 ; j < len ; j++)
 {
 if (str[j] == letters[i] || str[j] == letters[i] - 32)
-*(str+j) = numbers[i];
+*(str + j) = numbers[i];
 }
 }
 return (str);
