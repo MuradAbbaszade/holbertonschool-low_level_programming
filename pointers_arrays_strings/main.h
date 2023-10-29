@@ -19,3 +19,4 @@ char *string_toupper(char *);
 char *_strncpy(char *dest, char *src, int n);
 char *leet(char *);
 char *cap_string(char *);
+char *string_toupper(char *);
