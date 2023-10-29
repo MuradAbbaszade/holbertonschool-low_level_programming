@@ -11,9 +11,9 @@ char *_strpbrk(char *s, char *accept)
 {
 int i, j;
 int len = strlen(s), len2 = strlen(accept);
-for(i = 0 ; i < len ; i++)
+for (i = 0 ; i < len ; i++)
 {
-for (j = 0; j <len2 ; j++)
+for (j = 0; j < len2 ; j++)
 {
 if (*(s + i) == *(accept + j))
 {
