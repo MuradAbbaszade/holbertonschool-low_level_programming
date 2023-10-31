@@ -9,9 +9,9 @@ int is_prime_n(int n, int m);
  */
 int is_prime_number(int n)
 {
-    if (abs(n) == 1)
-    return (0);
-    return (is_prime_n(n, 2));
+if (abs(n) == 1)
+return (0);
+return (is_prime_n(n, 2));
 }
 /**
  * is_prime_n - helper
@@ -21,9 +21,9 @@ int is_prime_number(int n)
  */
 int is_prime_n(int n, int m)
 {
-    if (n == m)
-    return (1);
-    if(n % m == 0)
-    return (0);
-    return (is_prime_n(n, ++m));
+if (n == m)
+return (1);
+if (n % m == 0)
+return (0);
+return (is_prime_n(n, ++m));
 }
