@@ -25,6 +25,7 @@ if (arr[i] == NULL)
 {
 for (k = 0 ; k < height ; k++)
 free(arr[k]);
+free(arr);
 return (NULL);
 }
 }
