@@ -17,7 +17,7 @@ return (NULL);
 }
 size = strlen(str) * sizeof(char);
 if (size >= 4000)
-arr = malloc(4109); 
+arr = malloc(4110);
 arr = malloc(size);
 if (arr == NULL)
 {
