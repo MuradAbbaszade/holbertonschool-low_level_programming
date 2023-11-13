@@ -15,7 +15,7 @@ if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-s3 = malloc(sizeof(s1) + sizeof(s2));
+s3 = malloc(sizeof(s1) + sizeof(s2) - 4);
 if (s3 == NULL)
 return (NULL);
 i = 0;
