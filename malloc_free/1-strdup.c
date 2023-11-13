@@ -8,13 +8,17 @@
  */
 char *_strdup(char *str)
 {
+int size;
 int i;
 char *arr;
 if (str == NULL)
 {
 return (NULL);
 }
-arr = malloc((strlen(str) - 1) * sizeof(char));
+size = strlen(str) * sizeof(char);
+if (size >= 4000)
+arr = malloc(4109); 
+arr = malloc(size);
 if (arr == NULL)
 {
 return (NULL);
