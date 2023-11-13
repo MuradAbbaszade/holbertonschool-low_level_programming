@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 /**
  * _strdup - check the code
@@ -13,7 +14,7 @@ if (str == NULL)
 {
 return (NULL);
 }
-arr = malloc(sizeof(str));
+arr = malloc(strlen(str) * sizeof(char));
 if (arr == NULL)
 {
 return (NULL);
