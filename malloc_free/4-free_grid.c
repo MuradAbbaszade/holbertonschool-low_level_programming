@@ -6,7 +6,7 @@
  * @height:a
  * Return: Always 0.
  */
-void free_grid(int **grid, int height);
+void free_grid(int **grid, int height)
 {
 int i;
 for (i = 0; i < height; i++)
