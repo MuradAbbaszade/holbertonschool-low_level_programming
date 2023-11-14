@@ -22,7 +22,10 @@ if (n >= len2)
 n = len2;
 s = malloc((len1 + n + 1) * sizeof(char));
 if (s == NULL)
+{
+free(s);
 return (NULL);
+}
 for (i = 0 ; i < len1 ; i++)
 {
 s[i] = *s1;
