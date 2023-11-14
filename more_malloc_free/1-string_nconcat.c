@@ -20,7 +20,7 @@ len1 = strlen(s1);
 len2 = strlen(s2);
 if (n >= len2)
 n = len2;
-s = malloc((len1 + n + 1) * sizeof(char));
+s = malloc((len1 +n) * sizeof(char));
 if (s == NULL)
 {
 free(s);
