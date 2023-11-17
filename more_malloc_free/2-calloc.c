@@ -1,3 +1,4 @@
+#include <string.h>
 #include <stdlib.h>
 /**
  * _calloc - a
@@ -11,7 +12,8 @@ unsigned int i;
 int *a;
 if (nmemb == 0 || size == 0)
 return (NULL);
-a = malloc(nmemb * size);
+a = malloc(nmemb * sizeof(int));
+memset(a, 0, sizeof (int));
 if (a == NULL)
 return (NULL);
 for (i = 0 ; i < nmemb ; i++)
