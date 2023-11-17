@@ -14,7 +14,7 @@ return (NULL);
 a = malloc((max - min + 1) * sizeof(int));
 if (a == NULL)
 return (NULL);
-for (i = min ; i<=max ; i++)
+for (i = min ; i <= max ; i++)
 a[i - min] = i;
 return (a);
 }
