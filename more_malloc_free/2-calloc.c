@@ -14,6 +14,6 @@ return (NULL);
 a = malloc(nmemb * size);
 if (a == NULL)
 return (NULL);
-memset(a, 0, size);
+bzero(a, nmemb * size);
 return (a);
 }
