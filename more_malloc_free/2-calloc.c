@@ -11,7 +11,7 @@ unsigned int i;
 int *a;
 if (nmemb == 0 || size == 0)
 return (NULL);
-a = malloc(nmemb * sizeof(int));
+a = malloc(nmemb * size);
 if (a == NULL)
 return (NULL);
 for (i = 0 ; i < nmemb ; i++)
