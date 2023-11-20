@@ -18,12 +18,19 @@ if (new_name == NULL)
 return (NULL);
 new_owner = malloc(strlen(owner) + 1);
 if (new_owner == NULL)
+{
+free(new_name);
 return (NULL);
+}
 strcpy(new_name, name);
 strcpy(new_owner, owner);
 new_dog = malloc(sizeof(dog_t));
 if (new_dog == NULL)
+{
+free(new_name);
+free(new_owner);
 return (NULL);
+}
 new_dog->name = new_name;
 new_dog->owner = new_owner;
 new_dog->age = age;
