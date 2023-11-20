@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include "dog.h"
+#include <stdlib.h>
+#include <string.h>
+/**
+ * new_dog - check the code
+ * @name:n
+ * @age:a
+ * @owner:o
+ * Return: Always 0.
+ */
+dog_t *new_dog(char *name, float age, char *owner)
+{
+char *new_name, *new_owner;
+dog_t *new_dog;
+new_name = malloc(strlen(name) + 1);
+if (new_name == NULL)
+return (NULL);
+new_owner = malloc(strlen(owner) + 1);
+if (new_owner == NULL)
+return (NULL);
+strcpy(new_name, name);
+strcpy(new_owner, owner);
+new_dog = malloc(sizeof(dog_t));
+if (new_dog == NULL)
+return (NULL);
+new_dog->name = new_name;
+new_dog->owner = new_owner;
+new_dog->age = age;
+return (new_dog);
+}
