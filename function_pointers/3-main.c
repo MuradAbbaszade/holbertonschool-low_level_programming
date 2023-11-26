@@ -28,5 +28,5 @@ exit(99);
 }
 result = f(a, b);
 printf("%d\n", result);
-return (1);
+return (0);
 }
