@@ -3,11 +3,10 @@
 #include <stdarg.h>
 #include <stdlib.h>
 /**
-  * print_strings - ...
-  * @separator: ...
-  * @n: ...
-  *
-  * Return: ...
+  * print_strings - s
+  * @separator: s
+  * @n: s
+  * Return: s
   */
 void print_strings(const char *separator, const unsigned int n, ...)
 {

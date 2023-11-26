@@ -3,11 +3,10 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 /**
-  * print_numbers - ...
-  * @separator: ...
-  * @n: ...
-  *
-  * Return: ...
+  * print_numbers - s
+  * @separator: s
+  * @n: s
+  * Return: s
   */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
