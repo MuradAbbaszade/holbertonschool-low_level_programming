@@ -4,10 +4,11 @@
 /**
  * main - check the code
  * @argc:a
- * @argv[]:a
+ * @argv:a
  * Return: Always 0.
  */
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
 int a, b, result;
 char *op;
 int (*f)(int, int);
@@ -20,9 +21,9 @@ f = get_op_func(op);
 if (f == NULL)
 {
 printf("Error\n");
-return (0);
+return (98);
 }
 result = f(a, b);
 printf("%d\n", result);
-return (0);
+return (98);
 }
