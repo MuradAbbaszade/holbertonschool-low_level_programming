@@ -13,7 +13,10 @@ int a, b, result;
 char *op;
 int (*f)(int, int);
 if (argc != 4)
-return (0);
+{
+printf("Error\n");
+exit(98)
+}
 a = atoi(argv[1]);
 b = atoi(argv[3]);
 op = argv[2];
@@ -21,9 +24,9 @@ f = get_op_func(op);
 if (f == NULL)
 {
 printf("Error\n");
-exit(98);
+exit(99);
 }
 result = f(a, b);
 printf("%d\n", result);
-exit(98);
+return (1);
 }
