@@ -21,9 +21,9 @@ f = get_op_func(op);
 if (f == NULL)
 {
 printf("Error\n");
-return (98);
+exit(98);
 }
 result = f(a, b);
 printf("%d\n", result);
-return (98);
+exit(98);
 }
