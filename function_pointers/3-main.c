@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "calc.h"
+#include "3-calc.h"
 /**
  * main - check the code
  * @argc:a
@@ -18,7 +18,10 @@ b = atoi(argv[3]);
 op = argv[2];
 f = get_op_func(op);
 if (f == NULL)
+{
+printf("Error\n");
 return (0);
+}
 result = f(a, b);
 printf("%d\n", result);
 return (0);
