@@ -13,6 +13,8 @@ unsigned int i = 0;
 dlistint_t *iter = *h;
 dlistint_t *temp;
 dlistint_t *new = NULL;
+if (head == NULL)
+new = add_dnodeint_end(h, n);
 while (iter != NULL)
 {
 if (i == idx - 1)
@@ -20,6 +22,8 @@ if (i == idx - 1)
 temp = iter->next;
 iter->next = NULL;
 new = add_dnodeint_end(h, n);
+if (new == NULL)
+return (NULL);
 new->next = temp;
 temp->prev = new;
 break;
