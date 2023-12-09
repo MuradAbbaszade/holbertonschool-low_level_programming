@@ -13,7 +13,7 @@ unsigned int i = 0;
 dlistint_t *iter = *h;
 dlistint_t *temp;
 dlistint_t *new = NULL;
-if (head == NULL)
+if (h == NULL)
 new = add_dnodeint_end(h, n);
 while (iter != NULL)
 {
