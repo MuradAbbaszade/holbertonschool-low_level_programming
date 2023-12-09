@@ -23,6 +23,7 @@ temp = *head;
 while (temp->next != NULL)
 temp = temp->next;
 temp->next = new;
+new->prev = temp;
 }
 else
 *head = new;
