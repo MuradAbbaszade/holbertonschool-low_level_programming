@@ -1,19 +1,16 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * print_list - check the code
+ * print_dlistint - check the code
  * @h:n
  * Return: Always 0.
 */
-size_t print_list(const list_t *h)
+size_t print_dlistint(const dlistint_t *h)
 {
 unsigned int result = 0;
 while (h != NULL)
 {
-if (h->str == NULL)
-printf("[0] (nil)\n");
-else
-printf("[%d] %s\n", h->len, h->str);
+printf("%d\n", h->n);
 h = h->next;
 result++;
 }
