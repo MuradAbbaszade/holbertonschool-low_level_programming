@@ -19,14 +19,14 @@ if (idx == 0)
 new = add_dnodeint(h, n);
 return (new);
 }
-while(iter != NULL)
+while (iter != NULL)
 {
 if (i == idx)
 {
 new = malloc(sizeof(dlistint_t));
 if (new == NULL)
 return (NULL);
-new->n = n; 
+new->n = n;
 temp = iter->prev;
 new->next = iter;
 iter->prev = new;
@@ -38,5 +38,10 @@ iter = iter->next;
 }
 if (iter == NULL && i == idx)
 new = add_dnodeint_end(h, n);
+else if(iter == NULL && i > idx)
+{
+new = malloc(sizeof(dlistint_t));
+new->n = n;
+}
 return (new);
 }
