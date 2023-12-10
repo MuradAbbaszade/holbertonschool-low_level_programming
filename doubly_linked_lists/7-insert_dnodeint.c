@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "lists.h"
+#include <stdlib.h>
 /**
  * insert_dnodeint_at_index - check the code
  * @h:n
@@ -11,21 +12,23 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 unsigned int i = 0;
 dlistint_t *iter = *h;
-dlistint_t *temp;
-dlistint_t *new = NULL;
+dlistint_t *new;
+new = malloc(sizeof(dlistint_t));
+if(new == NULL)
+return (NULL);
+new->n = n;
 if (h == NULL)
-new = add_dnodeint_end(h, n);
+*h = new;
 while (iter != NULL)
 {
-if (i == idx - 1)
+if (i == idx)
 {
-temp = iter->next;
-iter->next = NULL;
-new = add_dnodeint_end(h, n);
-if (new == NULL)
-return (NULL);
-new->next = temp;
-temp->prev = new;
+new->next = iter;
+if(iter->prev != NULL)
+iter->prev->next = new;
+new->prev = iter->prev;
+iter->prev=new;
+new->next=iter;
 break;
 }
 iter = iter->next;
