@@ -35,6 +35,6 @@ iter = iter->next;
 i++;
 }
 if(new == NULL && i < idx)
-new = add_dnodeint_end(*h, n);
+new = add_dnodeint_end(h, n);
 return (new);
 }
