@@ -20,6 +20,7 @@ return (count);
  * flip_bits - a
  * @n:n
  * @m:m
+ * Return:a
 */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
