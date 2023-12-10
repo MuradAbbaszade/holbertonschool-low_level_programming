@@ -2,7 +2,7 @@
 #include <string.h>
 unsigned int binary_to_uint(const char *b)
 {
-unsigned int result;
+unsigned int result = 0;
 int i = 0;
 int len = strlen(b);
 int j = 0;
