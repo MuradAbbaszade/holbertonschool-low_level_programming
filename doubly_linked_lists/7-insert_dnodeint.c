@@ -32,7 +32,7 @@ new->next = iter;
 iter->prev = new;
 new->prev = temp;
 temp->next = new;
-break;
+return (new);
 }
 i++;
 iter = iter->next;
