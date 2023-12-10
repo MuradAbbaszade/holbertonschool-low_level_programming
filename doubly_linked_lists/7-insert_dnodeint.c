@@ -14,7 +14,7 @@ unsigned int i = 0;
 dlistint_t *iter = *h;
 dlistint_t *new;
 new = malloc(sizeof(dlistint_t));
-if(new == NULL)
+if (new == NULL)
 return (NULL);
 new->n = n;
 if (*h == NULL)
@@ -24,7 +24,7 @@ while (iter != NULL)
 if (i == idx)
 {
 new->next = iter;
-if(iter->prev != NULL)
+if (iter->prev != NULL)
 iter->prev->next = new;
 new->prev = iter->prev;
 iter->prev=new;
@@ -34,5 +34,7 @@ break;
 iter = iter->next;
 i++;
 }
+if(new == NULL && i < idx)
+new = add_dnodeint_end(head, n);
 return (new);
 }
