@@ -21,7 +21,7 @@ file = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 len = strlen(text_content);
 n = write(file, text_content, len);
 val = close(file);
-if (fd == -1 || n == -1 || val == -1)
+if (file == -1 || n == -1 || val == -1)
 return (-1);
 return (1);
 }
