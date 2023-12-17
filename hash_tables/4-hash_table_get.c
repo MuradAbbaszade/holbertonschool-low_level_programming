@@ -1,0 +1,34 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "hash_tables.h"
+/**
+ * hash_table_get - check the code
+ * @ht:ht
+ * @key:key
+ * Return: Always EXIT_SUCCESS.
+ */
+char *hash_table_get(const hash_table_t *ht, const char *key)
+{
+int index;
+char *value = NULL;
+hash_node_t **array;
+hash_node_t *iter;
+if (ht == NULL)
+return (NULL);
+if (key == NULL)
+return (NULL);
+index = key_index((unsigned char *)key, ht->size);
+array = ht->array;
+iter = array[index];
+while (iter != NULL) 
+{
+if (strcmp(iter->key, (char *)key) == 0)
+{
+value = strdup(iter->value);
+break;
+}
+iter = iter->next;
+}
+return (value);
+}
