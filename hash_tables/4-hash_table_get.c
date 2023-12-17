@@ -21,7 +21,7 @@ return (NULL);
 index = key_index((unsigned char *)key, ht->size);
 array = ht->array;
 iter = array[index];
-while (iter != NULL) 
+while (iter != NULL)
 {
 if (strcmp(iter->key, (char *)key) == 0)
 {
