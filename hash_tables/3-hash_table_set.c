@@ -16,7 +16,7 @@ int index;
 if (ht == NULL)
 return (0);
 arr = ht->array;
-index = key_index((unsigned *char)key, ht->size);
+index = key_index((unsigned char *)key, ht->size);
 h_node = arr[index];
 while (h_node != NULL)
 {
