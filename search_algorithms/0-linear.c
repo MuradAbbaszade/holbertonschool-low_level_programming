@@ -3,7 +3,7 @@
 #include "search_algos.h"
 
 /**
- * linear_seach - Entry point
+ * linear_search - linear search algorithm
  * @array: array
  * @size: size
  * @value: value

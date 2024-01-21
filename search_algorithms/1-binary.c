@@ -3,7 +3,7 @@
 #include "search_algos.h"
 
 /**
- * binary_search - Entry point
+ * binary_search - binary search algorithm
  * @array: array
  * @size: size
  * @value: value
