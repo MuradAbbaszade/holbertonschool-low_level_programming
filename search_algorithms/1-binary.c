@@ -24,7 +24,7 @@ for (i = left ; i <= right ; i++)
 {
 printf("%d", array[i]);
 if (i != right)
-printf(", ", array[i]);
+printf(", ");
 }
 printf("\n");
 if (array[middle] == value)
