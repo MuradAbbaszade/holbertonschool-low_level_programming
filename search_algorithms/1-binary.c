@@ -22,10 +22,13 @@ middle = left + (right - left) / 2;
 printf("Searching in array: ");
 for (i = left ; i <= right ; i++)
 {
-printf("%d ", array[i]);
+printf("%d", array[i]);
+if (i != right)
+printf(", ", array[i]);
 }
 printf("\n");
-if (array[middle] == value) return (middle);
+if (array[middle] == value)
+return (middle);
 else
 {
 if (array[middle] > value)
